@@ -1,0 +1,126 @@
+:root {
+  --accent_color: #dbfc35;
+  --dark_color: #162938;
+  --back_color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+}
+
+nav {
+  display: flex;
+  padding-top: 15px;
+  height: 5vh;
+  justify-content: space-between;
+}
+
+p.nav {
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  color: var(--back_color);
+}
+
+button.log-out {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 1.9em;
+  font-weight: 550;
+  padding: 5px 10px;
+  background: transparent;
+  cursor: pointer;
+  color: var(--back_color);
+}
+
+button.log-out:hover {
+  color: var(--accent_color);
+}
+
+span {
+  color: var(--accent_color);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 20px;
+}
+
+nav ul li a {
+  color: var(--back_color);
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: 530;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: var(--accent_color);
+}
+
+section.center {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background: transparent;
+  position: relative;
+  margin-top: 50px;
+  width: 95%;
+  height: 20%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.wrapper:hover {
+  border: 1px solid var(--accent_color);
+  transition: 0.4s;
+}
+
+@media (max-width: 700px) {
+  p.nav {
+    display: none;
+    transition: all 0.2s ease;
+  }
+}
+
+@media (max-width: 500px) {
+  button.log-out {
+    display: none;
+  }
+
+  nav ul li a {
+    font-size: 1.1em;
+    transition: all 0.2s ease;
+  }
+
+  nav {
+    padding-top: 15px;
+    transition: all 0.2s ease;
+  }
+
+  nav ul li {
+    padding-left: 10px;
+    padding-right: 3px;
+    transition: all 0.2s ease;
+  }
+}
