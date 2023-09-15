@@ -1,0 +1,189 @@
+:root {
+  --accent_color: #F2BC07;
+  --back_color: #fff;
+  --dark-color: #0C0E12;
+  --hover-color: #FAD338;
+}
+
+nav {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+}
+
+span {
+  color: var(--accent_color);
+}
+
+button.log-out {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.9em;
+  font-weight: 550;
+  background: transparent;
+  cursor: pointer;
+  color: var(--back_color);
+}
+
+button.log-out:hover {
+  color: var(--accent_color);
+}
+
+.wrapper {
+  background: transparent;
+  width: 100%;
+  position: relative;
+  height: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper:hover {
+  border: 1px solid var(--accent_color);
+  transition: 0.4s;
+}
+
+.inputbox input,
+.inputbox2 .part_no_update,
+.inputbox3 input {
+  height: 40px;
+  width: 100%;
+  padding: 2%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: 550;
+  font-size: 1em;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.inputbox select,.inputbox3 select {
+  font-size: 1.2em;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+button.submit {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 1.2em;
+  justify-content: center;
+  font-weight: 600;
+  max-height: 40px;
+  padding: 10px 40px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: var(--accent_color);
+  color: var(--dark-color);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+button.submit:hover {
+  cursor: pointer;
+  background: var(--hover-color);
+}
+
+.table {
+  display: block;
+  overflow-y: auto;
+  overflow-x: auto;
+  height: auto;
+  max-height: 250px;
+  padding: 0 1.5% 1% 1.5%;
+}
+
+.tr {
+  display: table-row;
+}
+
+.td {
+  display: table-cell;
+  border-bottom: 2px solid white;
+  padding: 5px;
+  text-align: center;
+  color: var(--back_color);
+  font-weight: 550;
+}
+
+.th {
+  background: white;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  border-bottom: 2px solid white;
+  display: table-cell;
+  font-size: 1.2em;
+  text-align: center;
+  color: var(--back_color);
+}
+
+.table .tr .th select {
+  font-size: 1em;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.inputbox1 label,
+.inputbox2 label {
+  font-size: 1.4em;
+  width: 100%;
+  color: var(--back_color);
+}
+
+.inputbox1 select {
+  font-size: 1.2em;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.inputbox1 button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2em;
+  justify-content: center;
+  font-weight: 600;
+  max-height: 40px;
+  padding: 10px 40px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: var(--accent_color);
+  color: var(--dark-color);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.inputbox1 button:hover{
+  background: var(--hover-color);
+}
+
+
+.table_update .th {
+  color: var(--dark-color);
+  font-weight: 550;
+}
+
+.table_update .table {
+  padding: 2% 0;
+}
+
+.inputbox2 .check {
+  margin-right: 7px;
+  height: 1.1em;
+  width: 1.1em;
+}
