@@ -1,0 +1,196 @@
+:root {
+  --accent_color: #dbfc35;
+  --back_color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url('image-dark.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 440px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper:hover {
+  border: 1px solid var(--accent_color);
+  transition: 0.4s;
+}
+
+.wrapper .form-box {
+  width: 100%;
+  padding: 40px;
+}
+
+.form-box h2 {
+  font-size: 2.5em;
+  color: var(--back_color);
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid var(--back_color);
+  margin: 30px 0;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: var(--back_color);
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.input-box input {
+  width: 88%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: var(--back_color);
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.input-box .icons {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: var(--back_color);
+  line-height: 57px;
+}
+
+.forgot {
+  font-size: 0.9em;
+  color: var(--back_color);
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgot label input {
+  accent-color: var(--accent_color);
+  margin-right: 6px;
+  margin-top: 1px;
+}
+
+.forgot a {
+  color: var(--back_color);
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  color: var(--accent_color);
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  background: var(--accent_color);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: 550;
+  color: #162938;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    height: 500px;
+    transition: all 0.2s ease;
+  }
+  .form-box h2 {
+    font-size: 2.2em;
+    transition: all 0.2s ease;
+  }
+
+  .input-box label {
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+  }
+
+  .input-box input {
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+  }
+
+  .input-box .icons {
+    font-size: 1em;
+    transition: all 0.2s ease;
+  }
+
+  .forgot {
+    font-size: 0.8em;
+    transition: all 0.2s ease;
+  }
+
+  .btn {
+    font-size: 1.3em;
+    margin-top: 50px;
+    transition: all 0.2s ease;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    width: 100%;
+    transition: all 0.2s ease;
+  }
+}
+
+@media (max-width: 350px) {
+  .forgot .remember {
+    display: none;
+  }
+
+  .forgot  {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+  }
+}
