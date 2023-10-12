@@ -44,7 +44,7 @@ function taskrender(task) {
   $("#task-content").append(
     '<div class="div-jquery p-2 mb-2">' +
       task +
-      '<ion-icon name="checkmark-circle-outline"></ion-icon></div>'
+      '<ion-icon name="checkmark-circle-outline" id="complete"></ion-icon></div>'
   );
 }
 
