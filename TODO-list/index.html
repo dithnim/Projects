@@ -16,9 +16,57 @@
 
     <!--!Babel CDN-->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!--!Bootsrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
   </head>
   <body>
-    <div id="head"></div>
+    <div class="container-fluid py-3">
+      <div id="title" style="display: flex; justify-content: center"></div>
+    </div>
+
+    <div
+      class="container-fluid"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+      ">
+      <div class="wrapper">
+        <div class="container-fluid py-1" style="background: transparent">
+          <div class="list-head pt-2" id="list-head" style="display: flex;background: transparent;"></div>
+          <div class="list-head2" id="list-head2" style="display: flex; margin-top: 15px;"></div>
+          <div class="task-input mb-2" id="task-input" style="display: flex;"></div>
+        </div>
+
+        <div class="container-fluid" id="task-content"></div>
+      </div>
+    </div>
+
+
+    <!--!Bootsrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <!--!ionicons-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--!Jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
     <script src="index.jsx" type="text/babel"></script>
+    <script src="index.js"></script>
   </body>
 </html>
