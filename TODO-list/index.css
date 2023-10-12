@@ -3,6 +3,7 @@
 :root {
   --back_color: rgb(39, 39, 39);
   --back_dark_color: rgb(27, 27, 27);
+  --primary_color: #dcfc35;
 }
 
 * {
@@ -15,20 +16,55 @@
   border-radius: 15px;
   box-shadow: 0px 0px 35px rgba(73, 88, 32, 0.5);
   background-color: var(--back_dark_color);
+  height: 500px;
 }
 
-.list-head  *, .list-head2 *{
-    background: transparent;
+.list-head *,
+.list-head2 * {
+  background: transparent;
 }
 
-.list-head ion-icon, .list-head2 ion-icon{
-    font-size: 1.4em;
+.list-head ion-icon,
+.list-head2 ion-icon {
+  font-size: 1.4em;
 }
 
-.task-input input{
-    width: 70%;
-    background: var(--back_dark_color);
-    border: 0;
-    outline: 0;
-    border-radius: 5px;
+.task-input input {
+  width: 70%;
+  background: var(--back_dark_color);
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+}
+
+.div-jquery {
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-jquery ion-icon {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.div-jquery ion-icon:hover {
+  color: var(--primary_color);
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--back_dark_color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

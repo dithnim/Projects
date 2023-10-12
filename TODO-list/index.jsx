@@ -22,7 +22,7 @@ ReactDOM.render(
 ReactDOM.render(
   <div style={{ display: "flex", backgroundColor: "var(--back_dark_color)" }}>
     <div style={{ display: "flex", marginRight: "349px" }}>
-      <ion-icon name="home-outline"></ion-icon>
+      <ion-icon name="home-outline" style={{ marginRight: "3px" }}></ion-icon>
       <label>Tasks</label>
     </div>
     <div>
@@ -41,7 +41,11 @@ function takeinput() {
 }
 
 function taskrender(task) {
-  render(<div>{task}</div>);
+  $("#task-content").append(
+    '<div class="div-jquery p-2 mb-2">' +
+      task +
+      '<ion-icon name="checkmark-circle-outline"></ion-icon></div>'
+  );
 }
 
 $(document).ready(function () {
@@ -74,15 +78,17 @@ $(document).ready(function () {
             backgroundColor: "var(--back_dark_color)",
             borderRadius: "5px",
             cursor: "pointer",
-          }}>
-          <ion-icon
-            name="checkmark-sharp"
+          }}
+          id="task-adder">
+          <label
             style={{
               color: "#dcfc35",
               background: "transparent",
-              fontSize: "1.2em",
-            }}
-            id="task-adder"></ion-icon>
+              fontSize: "1em",
+              cursor: "pointer",
+            }}>
+            Add
+          </label>
         </div>
       </div>,
       document.getElementById("task-input")
