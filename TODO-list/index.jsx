@@ -97,6 +97,7 @@ $(document).ready(function () {
     $("#task-adder").click(function () {
       let data = takeinput();
       taskrender(data);
+      $("#input-data").val("");
     });
   });
 });
