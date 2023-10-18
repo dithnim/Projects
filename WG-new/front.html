@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--!React CDN-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!--!Babel CDN-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!--!Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!--!Bootsrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+
+    <!--!Favicon icon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!--!CSS-->
+    <link rel="stylesheet" href="front.css" type="text/css" />
+
+    <title>Your Spares Partner</title>
+  </head>
+  <body>
+    <!--?Navbar openning-->
+    <div
+      class="navbar pt-2 px-3"
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+      ">
+      <div class="slogan">
+        <img src="images/welcome-logo.png" alt="Welcome" class="logo-www" />
+        <div class="para ps-2">
+          <label class="one">We</label><br />
+          <label class="two">are genuine</label>
+        </div>
+      </div>
+
+      <!--?navlist openning-->
+      <ul class="navlist" style="list-style: none">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+      </ul>
+
+      <ion-icon
+        name="menu-outline"
+        style="font-size: 1.8em; display: none"
+        id="menu-icon"
+        class="menu-icon"></ion-icon>
+    </div>
+
+    <!--?Home Section-->
+    <section class="home" id="home">
+      <div
+        class="container-md"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        ">
+        <div class="container-fluid">
+          <div class="details">
+            <h4>Hello! We Are</h4>
+            <div
+              style="
+                font-size: 3em;
+                font-weight: bold;
+                font-style: italic;
+                color: #707070;
+                margin-left: -5px;
+                line-height: 60px;
+              ">
+              WIJESINGHE GENUINE
+            </div>
+            <h4>Your <span>Spares Partner</span></h4>
+            <p>
+              We offer you genuine spare parts for your bajaj<br />
+              Three-Wheelers and Motorcycles
+            </p>
+            <div class="social">
+              <a
+                href="https://web.facebook.com/profile.php?id=100057766984271"
+                style="margin-left: 0"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+              <a href="mailto:wgshop.kamburupitiya@gmail.com"
+                ><ion-icon name="mail-outline"></ion-icon
+              ></a>
+              <a href="tel:0772066094"
+                ><ion-icon name="call-outline"></ion-icon
+              ></a>
+              <a href="https://www.instagram.com/wijesinghe_genuine_motors/"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+              <a href="https://wa.me/message/XUAWVCZDK25WH1?src=qr"
+                ><ion-icon name="logo-whatsapp"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div
+            class="shop-image"
+            style="display: flex; justify-content: right; align-items: center">
+            <img src="images/shop.png" alt="our shop" class="shop-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--?About us Section-->
+    <section class="about-us" id="about-us" style="background-color: #e7e7e7a9">
+      <div class="container-md">
+        <div class="title" style="display: flex; justify-content: center">
+          <p class="shop-name" style="font-size: 1.8em">
+            WIJESINGHE GENUINE MOTORS
+          </p>
+        </div>
+        <div class="container-fluid" style="color: grey; font-weight: 600">
+          <p class="intro">
+            David Pieris Motor Company (Pvt) Ltd is the largest automotive
+            company in Sri Lanka, serving the vast majority with its hallmark of
+            affordability, reliability and economy. They are the sole
+            distributor for Bajaj and KTM in Sri Lanka. We are also a
+            distributor for MRF, ATLAS and ORION tyres in Sri Lanka. DPMC has
+            pledged itself to setting the pace in Sri Lanka's automotive
+            industry with a commitment to uncompromising quality and outstanding
+            value. We are the Genuine Bajaj spare parts dealer in Kamburupitiya.
+            We offer you the best quality products for your vehicles with lowest
+            prices. Join with us to get the lowest price possible for your
+            vehicle spare parts.
+          </p>
+          <p class="our-role">
+            We are currently working hard to finish the development of our
+            online system. Sign up below to recieve and to be notified when we
+            launch!
+          </p>
+          <div class="user-email pb-2">
+            <input
+              type="email"
+              id="user-email"
+              placeholder="Enter your gmail address to get notified....."
+              class="user-text form-control" />
+            <button id="user-input-button">Submit</button>
+          </div>
+          <div id="alert" class="alert mt-2" style="padding: 0">
+            <div
+              class="alert alert-success"
+              id="success-alert"
+              role="alert"
+              style="display: none">
+              Successfully added your email..!
+            </div>
+            <div
+              class="alert alert-danger"
+              id="null-alert"
+              role="alert"
+              style="display: none">
+              Email cannot be empty..!
+            </div>
+            <div
+              class="alert alert-warning"
+              id="warning-alert"
+              role="alert"
+              style="display: none">
+              Invalid Email format..!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--?Services Section-->
+    <section class="services" id="services">
+      <div class="container-md">
+        <div class="title">
+          <p class="services" style="font-size: 1.8em; text-align: center">
+            OUR SERVICES
+          </p>
+        </div>
+        <div
+          class="container-md"
+          style="display: flex; justify-content: center; align-items: center">
+          <div class="container-fluid pt-5 mx-3">
+            <img src="images/order.png" alt="Product" />
+            <p class="title">Best Products</p>
+            <p class="text">
+              We offer you the best spare parts from genuine Bajaj spare parts
+              dealer for your Motorcycles and Three-Wheelers
+            </p>
+          </div>
+          <div class="container-fluid pt-5 mx-3">
+            <img src="images/light-bulb.png" alt="Price" />
+            <p class="title">Fancy Items</p>
+            <p class="text">
+              We provide the other items that you need to make your vehicle look
+              more attractive
+            </p>
+          </div>
+          <div class="container-fluid pt-5 mx-3">
+            <img src="images/offer.png" alt="Trust" />
+            <p class="title">Best Price</p>
+            <p class="text">
+              Get the best price for your products with a discount upto 7%
+            </p>
+          </div>
+        </div>
+        <div class="item-search">
+          <div class="container-md p-0 mt-4">
+            <div class="product-input" style="display: flex; font-weight: 600">
+              <input
+                type="text"
+                placeholder="Enter a part number to check availability...."
+                name="item-search"
+                id="part-serach"
+                class="part-search form-control" />
+              <button type="submit" id="item-search">Search</button>
+            </div>
+          </div>
+
+          <div class="message" id="message">
+            <div
+              class="alert alert-primary"
+              id="yes"
+              role="alert"
+              style="display: none">
+              Product Available...!
+            </div>
+            <div
+              class="alert alert-danger"
+              id="no"
+              role="alert"
+              style="display: none">
+              Out Of Stock...!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--!ionicons-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--!Bootsrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <!--!JSX-->
+    <script src="front.jsx" type="text/babel"></script>
+  </body>
+</html>
