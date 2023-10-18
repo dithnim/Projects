@@ -1,6 +1,6 @@
 <?php
 
-require_once( 'connection_user.php' );
+require_once( '../connections/connection_user.php' );
 require_once( '../functions/send_requests.php' );
 
 if ($_SERVER[ 'REQUEST_METHOD' ] == "POST")
