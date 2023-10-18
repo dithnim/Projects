@@ -46,7 +46,8 @@ function taskrender(task) {
       task +
       '<ion-icon name="checkmark-circle-outline" id=' +
       task +
-      " class='comp'></ion-icon></div>"
+      " class='comp'></ion-icon></div>" +
+      '<ion-icon name="checkmark-circle-outline" id="complete"></ion-icon></div>'
   );
 }
 
