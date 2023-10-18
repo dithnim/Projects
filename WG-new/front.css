@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100;1,300&display=swap");
+
+:root {
+  --accent-color: rgb(255, 102, 0);
+  --background: #ffe4d9;
+  --footer: #25303f;
+  --footer-back: #181533;
+}
+
+span {
+  color: var(--accent-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+}
+
+.slogan {
+  display: flex;
+  align-items: center;
+}
+
+.slogan .para {
+  font-size: 1.1em;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+img.logo-www {
+  width: 45px;
+  height: 45px;
+}
+
+.navlist li {
+  display: inline;
+  padding: 0 25px;
+  list-style: none;
+}
+
+ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+ul li a:hover {
+  color: var(--accent-color);
+  transition: all 0.2s ease;
+}
+
+.home {
+  font-family: sans-serif;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(images/background.jpg);
+  background-size: 100% 850px;
+  background-repeat: no-repeat;
+}
+
+section .home {
+  height: 80vh;
+}
+
+.home h4 {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.home p {
+  font-weight: 600;
+  font-size: 0.8em;
+  color: grey;
+}
+
+.shop-image img {
+  width: 75%;
+}
+
+.social {
+  padding-top: 40px;
+  height: auto;
+}
+
+.social a {
+  color: black;
+  font-size: 1.3em;
+  margin: 0 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.social a:hover {
+  background-color: var(--accent-color);
+  color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+
+section.about-us .user-email {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+section.about-us .user-email button {
+  width: 10%;
+  cursor: pointer;
+  padding: 10px 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  font-size: 1em;
+  background: transparent;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  transition: all 0.5s ease;
+  color: var(--accent-color);
+}
+
+section.about-us .user-email button:hover {
+  background-color: var(--background);
+  transition: all 0.5s ease;
+}
+
+section.about-us .user-email input {
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-size: 1em;
+  outline: none;
+  background: transparent;
+  transition: all 0.5s ease;
+}
+
+section.services img {
+  width: 50%;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+section.services .container-fluid {
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s ease;
+  border-radius: 15px;
+  height: 45vh;
+}
+
+section.services div p.text {
+  color: rgb(131, 131, 131);
+  text-align: center;
+}
+
+section.services .container-fluid:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--accent-color);
+  transition: all 0.5s ease;
+  transform: scale(1.01);
+}
+
+section.services .item-search input {
+  width: 90%;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-size: 1em;
+  outline: none;
+  background: transparent;
+  transition: all 0.5s ease;
+}
+
+section.services .item-search button {
+  width: 10%;
+  cursor: pointer;
+  padding: 10px 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  font-size: 1em;
+  background: transparent;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  transition: all 0.5s ease;
+  color: var(--accent-color);
+}
+
+section.services .item-search button:hover {
+  background-color: var(--background);
+  transition: all 0.5s ease;
+}
+
+.item-search input{
+  font-weight: 600;
+}
+
+@media (max-width: 735px) {
+  .social {
+    display: none;
+  }
+
+  .user-email{
+    flex-wrap: wrap;
+  }
+
+  .user-email input{
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .user-email button{
+    width: 100%;
+  }
+}
