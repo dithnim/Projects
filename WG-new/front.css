@@ -3,6 +3,7 @@
 :root {
   --accent-color: rgb(255, 102, 0);
   --background: #ffe4d9;
+  --btn_click: #eec8b9;
   --footer: #25303f;
   --footer-back: #181533;
 }
@@ -123,13 +124,17 @@ section.about-us .user-email button {
   background: transparent;
   border-radius: 0 10px 10px 0;
   border: none;
-  transition: all 0.5s ease;
+
   color: var(--accent-color);
 }
 
 section.about-us .user-email button:hover {
   background-color: var(--background);
-  transition: all 0.5s ease;
+
+}
+
+section.about-us .user-email button:active {
+  background-color: var(--btn_click);
 }
 
 section.about-us .user-email input {
@@ -160,7 +165,7 @@ section.services .container-fluid {
   height: 45vh;
 }
 
-p.title{
+p.title {
   font-size: 1.4em;
   font-weight: 700;
   color: #7e7e7e;
