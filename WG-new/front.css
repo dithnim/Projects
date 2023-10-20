@@ -197,6 +197,7 @@ section.services .item-search button {
   border: none;
   transition: all 0.5s ease;
   color: var(--accent-color);
+  height: 44px;
 }
 
 section.services .item-search button:hover {
@@ -206,6 +207,85 @@ section.services .item-search button:hover {
 
 .item-search input{
   font-weight: 600;
+}
+
+footer {
+  background-image: url(images/footer.png);
+  background-position: center;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+footer .content {
+  background-color: var(--footer-back);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  font-size: 0.8em;
+  text-align: right;
+  border-radius: 80px 0;
+  height: 200px;
+  padding: 2%;
+  color: #fff;
+}
+
+footer .about-site{
+  text-align: center;
+}
+
+footer .content a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+footer .content a:hover {
+  text-decoration: underline;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+footer h6 {
+  display: flex;
+  align-items: center;
+}
+
+footer h6:hover {
+  scale: 1.02;
+  transition: all 0.2s ease;
+}
+
+.footer-social,.footer-resources{
+  width: 110px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 @media (max-width: 735px) {
