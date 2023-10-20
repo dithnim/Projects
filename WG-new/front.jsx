@@ -1,9 +1,22 @@
 $(document).ready(function () {
-  
+  function resize() {
+    let screen_width = screen.width;
 
-  function menu_panel() {
-    ReactDOM.render();
+    if (screen_width < 735) {
+      $(".navlist").css("display", "none");
+      $(".menu-icon").css("display", "block");
+    } else {
+      $(".navlist").css("display", "block");
+      $(".menu-icon").css("display", "none");
+    }
   }
+
+  resize();
+
+  $(window).resize(function () {
+    resize();
+  });
+
 
   $("#user-input-button").click(function () {
     let user_email = document.getElementById("user-email").value;
@@ -23,30 +36,30 @@ $(document).ready(function () {
           }
         );
 
-        document.getElementById("success-alert").style.display = "block";
-        document.getElementById("null-alert").style.display = "none";
-        document.getElementById("warning-alert").style.display = "none";
+        $("#success-alert").css("display", "block");
+        $("#null-alert").css("display", "none");
+        $("#warning-alert").css("display", "none");
         setTimeout(function () {
-          document.getElementById("success-alert").style.display = "none";
+          $("#success-alert").css("display", "none");
         }, 5000);
 
         $("#user-email").val("");
       } else {
-        document.getElementById("warning-alert").style.display = "block";
-        document.getElementById("null-alert").style.display = "none";
-        document.getElementById("success-alert").style.display = "none";
+        $("#warning-alert").css("display", "block");
+        $("#null-alert").css("display", "none");
+        $("#success-alert").css("display", "none");
         setTimeout(function () {
-          document.getElementById("warning-alert").style.display = "none";
+          $("#warning-alert").css("display", "none");
         }, 5000);
 
         $("#user-email").val("");
       }
     } else {
-      document.getElementById("null-alert").style.display = "block";
-      document.getElementById("success-alert").style.display = "none";
-      document.getElementById("warning-alert").style.display = "none";
+      $("#null-alert").css("display", "block");
+      $("#success-alert").css("display", "none");
+      $("#warning-alert").css("display", "none");
       setTimeout(function () {
-        document.getElementById("null-alert").style.display = "none";
+        $("#null-alert").css("display", "none");
       }, 5000);
     }
   });
