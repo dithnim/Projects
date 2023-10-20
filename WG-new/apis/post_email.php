@@ -13,8 +13,6 @@ if ($_SERVER[ 'REQUEST_METHOD' ] == "POST")
         $email = $data[ "email" ];
         $stmt = $conn->prepare( "INSERT INTO `email_notifies` (`email`) VALUES (?);" );
         $stmt->bind_param( "s", $email );
-
-        echo "hii";
         $stmt->execute();
 
         if ($stmt->error)

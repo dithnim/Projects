@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    //?Forgot password section
+  //?Forgot password section
   $("#forgot-password").click(function () {
     ReactDOM.render(
       <div>
@@ -39,7 +39,10 @@ $(document).ready(function () {
       document.getElementById("login-content")
     );
 
-    $("#button-login").html("<label>Confirm</label>");
+    ReactDOM.render(
+      <label style={{ cursor: "pointer" }}>Confirm</label>,
+      document.getElementById("button-login")
+    );
   });
 
   //?Reset entered data
@@ -50,5 +53,28 @@ $(document).ready(function () {
     $("#email").val("");
     $("#new-password").val("");
     $("#confirm-password").val("");
+  });
+
+  $("#button-login").click(function () {
+    let uname = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+
+    if (uname != "") {
+      if (pass != "") {
+        var jsondata = {
+          username: uname,
+          password: pass,
+        };
+
+        jQuery.post(
+          "http://localhost/projects/Projects/WG-new/apis/admin_login.php",
+          JSON.stringify(jsondata)
+        );
+      } else {
+        alert("Please enter the password");
+      }
+    } else {
+      alert("Please enter the username");
+    }
   });
 });

@@ -14,7 +14,7 @@ $(document).ready(function () {
         };
 
         jQuery.post(
-          "http://localhost/WG-new/apis/post_email.php",
+          "http://localhost/projects/Projects/WG-new/apis/post_email.php",
           JSON.stringify(jsondata),
           function (returnData) {
             alert(returnData);
