@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  
+
   function menu_panel() {
     ReactDOM.render();
   }

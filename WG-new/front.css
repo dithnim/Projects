@@ -205,7 +205,7 @@ section.services .item-search button:hover {
   transition: all 0.5s ease;
 }
 
-.item-search input{
+.item-search input {
   font-weight: 600;
 }
 
@@ -233,7 +233,7 @@ footer .content {
   color: #fff;
 }
 
-footer .about-site{
+footer .about-site {
   text-align: center;
 }
 
@@ -255,7 +255,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-
 footer h6 {
   display: flex;
   align-items: center;
@@ -266,7 +265,8 @@ footer h6:hover {
   transition: all 0.2s ease;
 }
 
-.footer-social,.footer-resources{
+.footer-social,
+.footer-resources {
   width: 110px;
 }
 
@@ -293,16 +293,17 @@ footer h6:hover {
     display: none;
   }
 
-  .user-email{
+  .user-email {
     flex-wrap: wrap;
   }
 
-  .user-email input{
+  .user-email input {
     width: 100%;
     border-radius: 10px;
   }
 
-  .user-email button{
+  .user-email button {
     width: 100%;
   }
+
 }
