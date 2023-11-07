@@ -7,7 +7,7 @@ $(document).ready(function () {
         <input
           type="email"
           id="email"
-          className="form-control mt-1 mb-2 is-invalid"
+          className="form-control mt-1 mb-2"
           placeholder="Enter your email"
           aria-describedby="email_validation"
         />
@@ -21,7 +21,7 @@ $(document).ready(function () {
           maxLength="10"
           id="phone"
           placeholder="Enter your mobile number"
-          className="form-control mt-1 mb-2 is-invalid"
+          className="form-control mt-1 mb-2"
           aria-describedby="phone_validation"
         />
         <div id="phone_validation" class="invalid-feedback">
@@ -32,7 +32,7 @@ $(document).ready(function () {
         <input
           type="password"
           id="new-password"
-          className="form-control mt-1 mb-2 is-invalid"
+          className="form-control mt-1 mb-2"
           placeholder="Enter the new password"
           aria-describedby="newpass_validation"
         />
@@ -44,7 +44,7 @@ $(document).ready(function () {
         <input
           type="password"
           id="confirm-password"
-          className="form-control mt-1 is-invalid"
+          className="form-control mt-1"
           placeholder="Retype to confirm"
           aria-describedby="newpasscon_validation"
         />
@@ -89,6 +89,7 @@ $(document).ready(function () {
       }
     }
 
+    //?Login form validation
     if (uname == "") {
       $("#username").addClass("is-invalid").removeClass("is-valid mb-2");
       $("#password_validation").addClass("mb-2");
