@@ -7,9 +7,13 @@ $(document).ready(function () {
         <input
           type="email"
           id="email"
-          className="form-control mt-1 mb-2"
+          className="form-control mt-1 mb-2 is-invalid"
           placeholder="Enter your email"
+          aria-describedby="email_validation"
         />
+        <div id="email_validation" class="invalid-feedback">
+          Please provide your email.
+        </div>
 
         <label htmlFor="phone">Mobile NO.</label>
         <input
@@ -17,24 +21,36 @@ $(document).ready(function () {
           maxLength="10"
           id="phone"
           placeholder="Enter your mobile number"
-          className="form-control mt-1 mb-2"
+          className="form-control mt-1 mb-2 is-invalid"
+          aria-describedby="phone_validation"
         />
+        <div id="phone_validation" class="invalid-feedback">
+          Please provide the phone number.
+        </div>
 
         <label htmlFor="new password">New password</label>
         <input
           type="password"
           id="new-password"
-          className="form-control mt-1 mb-2"
+          className="form-control mt-1 mb-2 is-invalid"
           placeholder="Enter the new password"
+          aria-describedby="newpass_validation"
         />
+        <div id="newpass_validation" class="invalid-feedback">
+          Please provide a password.
+        </div>
 
         <label htmlFor="confirm password">Confirm password</label>
         <input
           type="password"
           id="confirm-password"
-          className="form-control mt-1"
+          className="form-control mt-1 is-invalid"
           placeholder="Retype to confirm"
+          aria-describedby="newpasscon_validation"
         />
+        <div id="newpasscon_validation" class="invalid-feedback">
+          Please provide a password.
+        </div>
       </div>,
       document.getElementById("login-content")
     );
