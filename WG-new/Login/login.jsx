@@ -74,7 +74,8 @@ $(document).ready(function () {
     }
 
     if (uname == "") {
-      $("#username").addClass("is-invalid").removeClass("is-valid");
+      $("#username").addClass("is-invalid").removeClass("is-valid mb-2");
+      $("#password_validation").addClass("mb-2");
     } else {
       $("#username").addClass("is-valid").removeClass("is-invalid");
     }
