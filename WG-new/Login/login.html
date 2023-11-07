@@ -74,14 +74,22 @@
               type="text"
               id="username"
               class="form-control mb-2 mt-1"
-              placeholder="Enter the Username" />
+              placeholder="Enter the Username"
+              aria-describedby="username_validation" />
+            <div id="username_validation" class="invalid-feedback">
+              Please provide a username.
+            </div>
 
             <label for="password">Password</label>
             <input
               type="password"
               id="password"
               class="form-control mt-1"
-              placeholder="Enter the Password" />
+              placeholder="Enter the Password"
+              aria-describedby="password_validation" />
+            <div id="password_validation" class="invalid-feedback">
+              Please provide a password.
+            </div>
           </div>
 
           <div
@@ -98,7 +106,7 @@
             </button>
             <div class="buttons">
               <button class="btn btn-warning" id="button-login">
-                <label for="login"  style="cursor: pointer">LogIn</label>
+                <label for="login" style="cursor: pointer">LogIn</label>
               </button>
               <button class="btn btn-secondary" id="button-cancel">
                 Cancel

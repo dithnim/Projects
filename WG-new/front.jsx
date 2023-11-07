@@ -17,7 +17,6 @@ $(document).ready(function () {
     resize();
   });
 
-
   $("#user-input-button").click(function () {
     let user_email = document.getElementById("user-email").value;
 

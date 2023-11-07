@@ -70,11 +70,19 @@ $(document).ready(function () {
           "http://localhost/projects/Projects/WG-new/apis/admin_login.php",
           JSON.stringify(jsondata)
         );
-      } else {
-        alert("Please enter the password");
       }
+    }
+
+    if (uname == "") {
+      $("#username").addClass("is-invalid").removeClass("is-valid");
     } else {
-      alert("Please enter the username");
+      $("#username").addClass("is-valid").removeClass("is-invalid");
+    }
+
+    if (pass == "") {
+      $("#password").addClass("is-invalid").removeClass("is-valid");
+    } else {
+      $("#password").addClass("is-valid").removeClass("is-invalid");
     }
   });
 });
